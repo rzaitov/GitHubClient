@@ -9,12 +9,17 @@ namespace GitHubClient
 	[Register("AppDelegate")]
 	public partial class AppDelegate : UIApplicationDelegate
 	{
-		private UIWindow window;
+		private UIWindow _window;
+		private MainController _mainController;
+
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
-			window = new UIWindow(UIScreen.MainScreen.Bounds);
+			_window = new UIWindow(UIScreen.MainScreen.Bounds);
+			_mainController = new MainController();
 
-			window.MakeKeyAndVisible();
+			_window.RootViewController = _mainController;
+
+			_window.MakeKeyAndVisible();
 
 			return true;
 		}
