@@ -2,12 +2,23 @@ using System;
 
 using MonoTouch.UIKit;
 
-namespace GitHubClient
+using Octokit;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
+using System.Runtime.CompilerServices;
+using System.Collections.Generic;
+
+namespace GHClient
 {
 	public class MainController : UIViewController
 	{
-		public MainController()
+		private readonly GitHubClient _gitHubClient;
+		private readonly string _login;
+
+		public MainController(GitHubClient gitHubClient, string login)
 		{
+			_gitHubClient = gitHubClient;
+			_login = login;
 		}
 
 		public override void ViewDidLoad()
@@ -15,6 +26,20 @@ namespace GitHubClient
 			base.ViewDidLoad();
 
 			View.BackgroundColor = UIColor.White;
+
+			/*
+			var tuser = _gitHubClient.User.Get(_login);
+			var cont = tuser.ContinueWith(t =>
+			{
+				Console.WriteLine(t.Result);
+			});
+			*/
+
+			var tRep = _gitHubClient.Repository.GetAllForUser(_login);
+			tRep.ContinueWith(t =>
+			{
+				Console.WriteLine(t.Result);
+			});
 		}
 	}
 }

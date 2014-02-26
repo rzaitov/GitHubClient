@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubClient", "GitHubClient.csproj", "{176DE81B-DA49-4514-B0CC-7EA6BC82AD71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleClient", "ConsoleClient\ConsoleClient.csproj", "{E14B8791-A958-4556-B974-8B7943C55E66}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -25,6 +27,18 @@ Global
 		{176DE81B-DA49-4514-B0CC-7EA6BC82AD71}.Release|iPhone.Build.0 = Release|iPhone
 		{176DE81B-DA49-4514-B0CC-7EA6BC82AD71}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{176DE81B-DA49-4514-B0CC-7EA6BC82AD71}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{E14B8791-A958-4556-B974-8B7943C55E66}.Ad-Hoc|iPhone.ActiveCfg = Debug|iPhoneSimulator
+		{E14B8791-A958-4556-B974-8B7943C55E66}.Ad-Hoc|iPhone.Build.0 = Debug|iPhoneSimulator
+		{E14B8791-A958-4556-B974-8B7943C55E66}.AppStore|iPhone.ActiveCfg = Debug|iPhoneSimulator
+		{E14B8791-A958-4556-B974-8B7943C55E66}.AppStore|iPhone.Build.0 = Debug|iPhoneSimulator
+		{E14B8791-A958-4556-B974-8B7943C55E66}.Debug|iPhone.ActiveCfg = Debug|iPhoneSimulator
+		{E14B8791-A958-4556-B974-8B7943C55E66}.Debug|iPhone.Build.0 = Debug|iPhoneSimulator
+		{E14B8791-A958-4556-B974-8B7943C55E66}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{E14B8791-A958-4556-B974-8B7943C55E66}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{E14B8791-A958-4556-B974-8B7943C55E66}.Release|iPhone.ActiveCfg = Release|iPhoneSimulator
+		{E14B8791-A958-4556-B974-8B7943C55E66}.Release|iPhone.Build.0 = Release|iPhoneSimulator
+		{E14B8791-A958-4556-B974-8B7943C55E66}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{E14B8791-A958-4556-B974-8B7943C55E66}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = GitHubClient.csproj

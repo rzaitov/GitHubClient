@@ -8,7 +8,7 @@
     <ProjectGuid>{176DE81B-DA49-4514-B0CC-7EA6BC82AD71}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>GitHubClient</RootNamespace>
+    <RootNamespace>GHClient</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>GitHubClient</AssemblyName>
   </PropertyGroup>
@@ -91,6 +91,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="Octokit">
       <HintPath>Libs\Octokit.dll</HintPath>
     </Reference>

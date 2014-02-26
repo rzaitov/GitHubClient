@@ -4,7 +4,7 @@ using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-namespace GitHubClient
+namespace GHClient
 {
 	public class Application
 	{
